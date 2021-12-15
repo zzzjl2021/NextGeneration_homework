@@ -2,7 +2,7 @@ from PIL import Image
 import os
 import time
 start_time=time.time()
-path='./base/shop/rgb_'
+path='./dataset/shop/rgb_'
 total_memory = 0
 for i in range(499):
     a = i + 1

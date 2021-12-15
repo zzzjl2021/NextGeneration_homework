@@ -2,8 +2,8 @@ from cache_trigger_frame import *
 from PIL import Image
 import time
 start_time = time.time()
-path='./base+cached_trigger_frame/shop/rgb_'
-f=Image.open('./base+cached_trigger_frame/shop/rgb_1.png')
+path='./dataset/shop/rgb_'
+f=Image.open('./dataset/shop/rgb_1.png')
 Width,height=f.size
 size=Width*height
 trigger_frame_index=cachetriggerframe(path,35,size/2)
