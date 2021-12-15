@@ -20,11 +20,11 @@
 |         **base+cached_trigger_frame**:          | 11603894bytes  |  8.418972253799438 seconds   | 1.0066678524017334 seconds  | 9.425640106201172 seconds  |
 | **base+cached_trigger_frame+cluster_compress**: |  1550034bytes  |  16.530482292175293 seconds  | 0.12128210067749023 seconds | 16.651764392852783 seconds |
 
-|                    *1500*张                     |     bytes      |          deal_time          |        transfer_time        |         total_time         |
-| :---------------------------------------------: | :------------: | :-------------------------: | :-------------------------: | :------------------------: |
-|                    **base**                     | 896018820bytes | 0.06983733177185059 seconds | 28.114162921905518 seconds  | 78.0328860282898  seconds  |
-|         **base+cached_trigger_frame**:          | 38535362bytes  |  29.09647560119629 seconds  | 1.0066678524017334 seconds  | 32.34994077682495 seconds  |
-| **base+cached_trigger_frame+cluster_compress**: |  5188045bytes  |  52.57721996307373 seconds  | 0.12128210067749023 seconds | 51.702720403671265 seconds |
+|                    *1500*张                     |     bytes      |          deal_time          |       transfer_time        |         total_time         |
+| :---------------------------------------------: | :------------: | :-------------------------: | :------------------------: | :------------------------: |
+|                    **base**                     | 896018820bytes | 0.06983733177185059 seconds | 77.96304869651794 seconds  | 78.0328860282898  seconds  |
+|         **base+cached_trigger_frame**:          | 38535362bytes  |  29.09647560119629 seconds  | 3.253465175628662 seconds  | 32.34994077682495 seconds  |
+| **base+cached_trigger_frame+cluster_compress**: |  5188045bytes  | 51.702720403671265  seconds | 0.8744995594024658 seconds | 52.57721996307373  seconds |
 
 
 
