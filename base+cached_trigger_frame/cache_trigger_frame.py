@@ -7,7 +7,7 @@ import os
 # output:return the index of picture needed to be sent
 def cachetriggerframe(path,threshold1,threshold2):
     trigger_frame_index=[]
-    for i in range(498):
+    for i in range(1498):
         a=i+1
         b=a+1
         path1=os.path.join(path + str(a) + '.png' )
