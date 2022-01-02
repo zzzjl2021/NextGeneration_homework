@@ -1,30 +1,23 @@
 # Readme
+#### 0.base+cached_trigger_frame+cluster_compress文件夹
+cache-trigger_frame.py 计算触发帧
+Compress_fuc.py 压缩
+client.py 客户端
+main.py 主程序入口
+目标检测参考链接：git@github.com:voidking/object-detection.git
 
 #### 1. 说明：
-
-只聚类的话，时间会消耗太大，也没有必要
-所以就分为3种情况：
-	**base**,
-	**base+cached_trigger_frame**,
-	**base+cached_trigger_frame+cluster_compress**
-这个视频是来自服装商店的监控，镜头不晃，更方便物体移动侦测，也符合所提算法的适用场景。
-输入一共500张图片，选择出的触发帧能够很好的捕捉目标的移动状况。可以查看**base+cached_trigger_frame+cluster_compress**文件夹下的触发帧选择
-
-
+**base**,server-only
+**base+cached_trigger_frame+cluster_compress**,ours
+这个视频是来自Pedestrian监控，镜头不晃，更方便物体移动侦测，也符合所提算法的适用场景。
+输入一共1500张图片，选择出的触发帧能够很好的捕捉目标的移动状况。可以查看**base+cached_trigger_frame+cluster_compress**文件夹下的触发帧选择
+数据集链接：链接：https://pan.baidu.com/s/1TZrWIioIwkoZDPeFnHWN5g 提取码：f1vv 
 
 ####  2.实验结果 
+![123f8866296e3fb3bea9b17e627d640](https://user-images.githubusercontent.com/80235159/147878461-c2d3874e-a96e-45b7-9c46-ace666fd97b0.png)
+![060e416fb0047465301461fb807c8eb](https://user-images.githubusercontent.com/80235159/147878465-0723aa9d-d00c-4459-8505-c26f8a1ee631.png)
 
-|                     *500*张                     |     bytes      |          deal_time           |        transfer_time        |         total_time         |
-| :---------------------------------------------: | :------------: | :--------------------------: | :-------------------------: | :------------------------: |
-|                    **base**                     | 291372032bytes | 0.023934125900268555 seconds | 28.114162921905518 seconds  | 28.138097047805786 seconds |
-|         **base+cached_trigger_frame**:          | 11603894bytes  |  8.418972253799438 seconds   | 1.0066678524017334 seconds  | 9.425640106201172 seconds  |
-| **base+cached_trigger_frame+cluster_compress**: |  1550034bytes  |  16.530482292175293 seconds  | 0.12128210067749023 seconds | 16.651764392852783 seconds |
 
-|                    *1500*张                     |     bytes      |          deal_time          |       transfer_time        |         total_time         |
-| :---------------------------------------------: | :------------: | :-------------------------: | :------------------------: | :------------------------: |
-|                    **base**                     | 896018820bytes | 0.06983733177185059 seconds | 77.96304869651794 seconds  | 78.0328860282898  seconds  |
-|         **base+cached_trigger_frame**:          | 38535362bytes  |  29.09647560119629 seconds  | 3.253465175628662 seconds  | 32.34994077682495 seconds  |
-| **base+cached_trigger_frame+cluster_compress**: |  5188045bytes  | 51.702720403671265  seconds | 0.8744995594024658 seconds | 52.57721996307373  seconds |
 
 
 
